@@ -229,7 +229,7 @@ LANDING
 }
 
 header {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
 }
 
 .header__container {
@@ -262,6 +262,10 @@ header {
   max-height: 50vh;
 }
 
+.header__image {
+  margin: 0 auto;
+  max-width: 350px;
+}
 
 .container {
   padding: 56px 0;
