@@ -84,6 +84,7 @@ button:active {
   font-size: 20px;
   border-radius: 4px;
   border: none;
+  margin-bottom: 40px;
 }
 
 .purple {
@@ -225,6 +226,7 @@ LANDING
 */
 
 #landing {
+  height: 140vh;
   background-color: rgba(115, 66, 214, 0.1)
 }
 
@@ -260,11 +262,6 @@ header {
   /* Added this after the tutorial to 
   make landing page responsive on laptops */
   max-height: 50vh;
-}
-
-.header__image {
-  margin: 0 auto;
-  max-width: 350px;
 }
 
 .container {
@@ -325,7 +322,7 @@ HIGHLIGHTS
   bottom: 1px;
 }
 
-.highlight__wrapper {
+.highlights__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
@@ -776,6 +773,27 @@ select {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
+  .header__image {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  #highlights:after,
+#highlights:before {
+  background: url("./assets/wave.svg");
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 18vw;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
   .header__description {
     padding: 0 24px;
   }
@@ -811,6 +829,14 @@ select {
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
+  .header__image {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
   .btn__menu {
     display: block;
   }
