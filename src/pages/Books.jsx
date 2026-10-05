@@ -1,6 +1,6 @@
-import react from 'react';
+import React from 'react';
 import books from "../data";
-import Book from "./ui/Book";
+import Book from "../components/ui/Book";
 
 
 const Books = () => {
