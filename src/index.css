@@ -473,9 +473,6 @@ footer {
 
 .footer__logo {
   display: flex;
-}
-
-.footer__logo--img {
   width: 160px;
   filter: grayscale(1) invert(1);
 }
