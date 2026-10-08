@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Rating from '../components/ui/Rating';
 import Price from '../components/ui/Price';
+
 const BookInfo = ({ books }) => {
   return (
     <div id="books__body">
@@ -29,6 +30,21 @@ const BookInfo = ({ books }) => {
                 <div className="book__selected--price">
                   <Price salePrice={19.99} originalPrice={29.99} />
                 </div>
+                <div className="book__summary">
+                  <div className="book__summary--title">
+                    Summary
+                  </div>
+                  <p className="book__summary--para">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <p className="book__summary--para">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>                 
+                </div>
+                <button className="btn">
+                  Add to Cart
+                </button>
+                
               </div>
             </div>
           </div>
